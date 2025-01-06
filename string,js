@@ -1,0 +1,88 @@
+// Funciones comunes para variables de tipo string
+
+// Convertir a mayúsculas
+function convertirMayusculas(str) {
+    return str.toUpperCase();
+}
+
+// Convertir a minúsculas
+function convertirMinusculas(str) {
+    return str.toLowerCase();
+}
+
+// Obtener la longitud de la cadena
+function obtenerLongitud(str) {
+    return str.length;
+}
+
+// Obtener un carácter en una posición específica
+function obtenerCaracter(str, index) {
+    return str.charAt(index);
+}
+
+// Verificar si una cadena contiene otra cadena
+function contieneCadena(str, subStr) {
+    return str.includes(subStr);
+}
+
+// Reemplazar una subcadena por otra
+function reemplazarCadena(str, buscar, reemplazar) {
+    return str.replace(buscar, reemplazar);
+}
+
+// Dividir una cadena en un array de subcadenas
+function dividirCadena(str, separador) {
+    return str.split(separador);
+}
+
+// Recortar espacios en blanco al inicio y al final
+function recortarEspacios(str) {
+    return str.trim();
+}
+
+// Concatenar dos cadenas
+function concatenarCadenas(str1, str2) {
+    return str1.concat(str2);
+}
+
+// Obtener el índice de la primera aparición de una subcadena
+function indiceDe(str, subStr) {
+    return str.indexOf(subStr);
+}
+
+// Obtener el índice de la última aparición de una subcadena
+function ultimoIndiceDe(str, subStr) {
+    return str.lastIndexOf(subStr);
+}
+
+// Repetir una cadena un número específico de veces
+function repetirCadena(str, veces) {
+    return str.repeat(veces);
+}
+
+// Extraer una subcadena desde una posición inicial hasta una final
+function extraerSubcadena(str, inicio, fin) {
+    return str.substring(inicio, fin);
+}
+
+// Convertir una cadena a un array de caracteres
+function convertirAArray(str) {
+    return Array.from(str);
+}
+
+// Ejemplo de uso
+let ejemplo = "Hola Mundo";
+console.log(convertirMayusculas(ejemplo)); // "HOLA MUNDO"
+console.log(convertirMinusculas(ejemplo)); // "hola mundo"
+console.log(obtenerLongitud(ejemplo)); // 10
+console.log(obtenerCaracter(ejemplo, 1)); // "o"
+console.log(contieneCadena(ejemplo, "Mundo")); // true
+console.log(reemplazarCadena(ejemplo, "Mundo", "Amigo")); // "Hola Amigo"
+console.log(dividirCadena(ejemplo, " ")); // ["Hola", "Mundo"]
+console.log(recortarEspacios("  Hola Mundo  ")); // "Hola Mundo"
+console.log(concatenarCadenas("Hola", " Mundo")); // "Hola Mundo"
+console.log(indiceDe(ejemplo, "o")); // 1
+console.log(ultimoIndiceDe(ejemplo, "o")); // 7
+console.log(repetirCadena("Hola", 3)); // "HolaHolaHola"
+console.log(extraerSubcadena(ejemplo, 0, 4)); // "Hola"
+console.log(convertirAArray(ejemplo)); // ["H", "o", "l", "a", " ", "M", "u", "n", "d", "o"]
